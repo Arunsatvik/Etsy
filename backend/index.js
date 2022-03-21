@@ -15,9 +15,9 @@ const app = express();
 // });
 
 var db = mysql.createConnection({
-  //host: 'localhost',
+  host: 'project1-db.c7hitvlz6vwb.us-east-1.rds.amazonaws.com',
   database: 'users_schema',
-  port: '3306',
+  //port: '3306',
   user: 'admin',
   password: 'Msatvik2000'
 });
