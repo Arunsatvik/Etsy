@@ -21,7 +21,7 @@ export default function SignIn() {
     //set the with credentials to true
     axios.defaults.withCredentials = true;
     //make a post request with the user data
-    axios.post("http://127.0.0.1:3001/login", data).then((response) => {
+    axios.post("http://3.229.33.242:3001/login", data).then((response) => {
       if (response.data === "SUCCESS") {
         setAuth(true);
         console.log("Status Code : ", response.status);
