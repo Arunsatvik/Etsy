@@ -1,0 +1,9 @@
+# Query: #f1641d
+# ContextLines: 1
+
+1 result - 1 file
+
+frontend/public/css/Navigation-with-Search.css:
+  77  .navigation-clean-button .action-button:active {
+  78:   background: #92bde4;
+  79    border-radius: 20px;
