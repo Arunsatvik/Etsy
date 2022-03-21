@@ -7,7 +7,7 @@ const multer = require("multer");
 const fs = require("fs");
 
 const app = express();
-
+var XMLHttpRequest = require('xhr2');
 var xhr = new XMLHttpRequest();
 xhr.open('GET', 'http://3.229.33.242:3000/', true);
 xhr.withCredentials = true;
