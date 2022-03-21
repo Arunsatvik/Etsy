@@ -3,6 +3,7 @@
     "bootstrap": "^5.1.3",
     "express": "^4.17.3",
     "mysql": "^2.18.1",
+     "proxy": "http://3.229.33.242:3000/",
     "react-bootstrap": "^2.2.0"
   }
 }
