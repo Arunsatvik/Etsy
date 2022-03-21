@@ -15,10 +15,10 @@ const app = express();
 // });
 
 var db = mysql.createConnection({
-  host: 'localhost',
+  //host: 'localhost',
   database: 'users_schema',
   port: '3306',
-  user: 'root',
+  user: 'admin',
   password: 'Msatvik2000'
 });
 
