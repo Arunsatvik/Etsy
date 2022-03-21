@@ -25,7 +25,7 @@ export default function Register() {
     //set the with credentials to true
     axios.defaults.withCredentials = true;
     //make a post request with the user data
-    axios.post("http://3.229.33.242:3001/register", data).then((response) => {
+    axios.post("https://cors-anywhere.herokuapp.com/http://3.229.33.242:3001/register", data).then((response) => {
       setSubmit(true);
       if (response.data === "SUCCESS") {
         console.log("Status Code : ", response.status);
