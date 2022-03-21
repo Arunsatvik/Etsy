@@ -1,15 +1,15 @@
 const express = require("express");
 const mysql = require("mysql");
 const session = require("express-session");
-const cors = require("cors");
+//const cors = require("cors");
 const bodyParser = require("body-parser");
 const multer = require("multer");
 const fs = require("fs");
 
 const app = express();
 //app.options('*', cors());
-app.use(cors({ origin: "http://3.229.33.242:3000/", credentials: true }));
-app.use(function(req, res, next) { res.header("Access-Control-Allow-Origin", "*"); res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); next(); });
+//app.use(cors({ origin: "http://3.229.33.242:3000/", credentials: true }));
+//app.use(function(req, res, next) { res.header("Access-Control-Allow-Origin", "*"); res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); next(); });
 
 
 // const db = mysql.createConnection({
