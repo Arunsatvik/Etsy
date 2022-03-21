@@ -19,10 +19,14 @@ app.use(cors());
 //app.use(cors({ origin: "http://3.229.33.242:3000/", credentials: false }));
 app.use(function(req, res, next) 
        { 
-         res.set('Access-Control-Allow-Credentials', 'false')
-         res.set("Access-Control-Allow-Origin", "http://3.229.33.242:3000/"); 
-         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); 
-        next(); 
+//          res.set('Access-Control-Allow-Credentials', 'false')
+//          res.set("Access-Control-Allow-Origin", "http://3.229.33.242:3000/"); 
+//          res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); 
+//         next(); 
+       res.header("Access-Control-Allow-Credentials", true);
+       res.header("Access-Control-Allow-Origin", req.headers.origin);
+       res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+       res.header("Access-Control-Allow-Headers", "X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept");
        });
 
 
