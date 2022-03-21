@@ -7,6 +7,13 @@ const multer = require("multer");
 const fs = require("fs");
 
 const app = express();
+
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://3.229.33.242:3000/', true);
+xhr.withCredentials = true;
+xhr.send(null);
+
+
 app.use(cors());
 //app.options('*', cors());
 //app.use(cors({ origin: "http://3.229.33.242:3000/", credentials: true }));
