@@ -15,8 +15,8 @@ const app = express();
 
 
 app.use(cors());
-//app.options('*', cors());
-//app.use(cors({ origin: "http://3.229.33.242:3000/", credentials: false }));
+app.options('*', cors());
+app.use(cors({ origin: "http://3.229.33.242:3000/", credentials: false }));
 app.use(function(req, res, next) 
        { 
 //          res.set('Access-Control-Allow-Credentials', 'false')
